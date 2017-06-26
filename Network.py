@@ -1,5 +1,19 @@
 import numpy as np
 global numpick 
+
+
+node = [[0],[1],[2],[3],[4],[5]]
+node.append
+print(node[0][1])
+
+
+
+
+
+
+
+
+
 numpick = input("Choose a number:")
 def sigmoid():
     print(numpick)
@@ -9,17 +23,7 @@ def sigmoid():
         print(numpick)
 sigmoid()
 
-def node(i):
-    for i in range:
-        [0][2]
-        [0][3]
-        [0][4]
-        [1][2]
-        [1][3]
-        [1][4]
-        [2][5]
-        [3][5]
-        [4][5]
+
         
         
     
