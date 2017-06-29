@@ -3,8 +3,14 @@ for i in aa:
     for x in range(0,7):
         i.append('-')
 dd = 1
-        
 
+
+def printer():
+    for r in range(0,6):
+        print() 
+        for c in range(0,7):
+            print(aa[r][c],end = '')
+    
         
 while dd == 1:
     a = int(input('Player one pick a column.'))
@@ -18,12 +24,8 @@ while dd == 1:
             i = 5
             a = int(input('Player one pick a column.'))
             
-        
-    for r in range(0,6):
-        print() 
-        for c in range(0,7):
-            print(aa[r][c],end = '')
-    
+    printer()    
+   
     for i in range(0,3):
         for h in range(0,7):
             if aa[i][h] == 'x' and aa[i+1][h] == 'x' and aa[i+2][h] == 'x' and aa[i+3][h] == 'x':
@@ -63,10 +65,7 @@ while dd == 1:
         if aa[0][a] != '-':
             i = 5
             a = int(input('Player two pick a column.'))
-    for r in range(0,6):
-        print() 
-        for c in range(0,7):
-            print(aa[r][c],end = '')
+    printer()
             
             
     for i in range(0,3):
@@ -92,5 +91,3 @@ while dd == 1:
             if aa[i][h] == 'o' and aa[i+1][h-1] == 'o' and aa[i+2][h-2] == 'o' and aa[i+3][h-3] == 'o':
                 print('     You Win!')
                 dd = 0  
-
-        
